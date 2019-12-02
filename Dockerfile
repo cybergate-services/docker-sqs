@@ -20,7 +20,7 @@ RUN \
   && curl -LO https://s3-eu-west-1.amazonaws.com/softwaremill-public/elasticmq-server-${elasticmq_version}.jar \
   && mv elasticmq-server-${elasticmq_version}.jar elasticmq-server.jar
 
-FROM openjdk:8-jdk-alpine
+FROM openjdk:11-jdk-alpine
 LABEL maintainer="Chinthaka Deshapriya <chinthaka@cybergate.lk>"
 
 COPY --from=Builder /tmp/sqs-alpine/ /opt/
