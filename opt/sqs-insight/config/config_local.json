@@ -4,10 +4,10 @@
 
     "endpoints": [
         {
-           "key": "notValidKey",
-           "secretKey": "notValidSecret",
+           "key": "SQS_ACCESS_KEY",
+           "secretKey": "SQS_SECRET_KEY",
            "region": "eu-central-1",
-           "url": "http://localhost:9324/queue/default",
+           "url": "http://sqs:9324/queue/default",
            "visibility": 0
         }
     ]
